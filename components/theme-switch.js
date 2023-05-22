@@ -9,6 +9,7 @@ const themes = [
   { title: 'Light Mode', name: 'light', color: { hex: '#f4f4f0' } },
   { title: 'Dark Mode', name: 'dark', color: { hex: '#000000' } },
   { title: 'Metal Mode', name: 'metal', color: { hex: '#FB1B15' } },
+  { title: 'Cyan Mode', name: 'cyan', color: { hex: '#38e91f' } },
 ]
 
 const ThemeSwitch = () => {

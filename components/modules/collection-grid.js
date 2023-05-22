@@ -255,7 +255,7 @@ const Collection = ({ data = {} }) => {
             </p>
           </div>
         )}
-      </div>
+        </div> 
     </section>
   )
 }

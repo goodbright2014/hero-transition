@@ -14,6 +14,7 @@ export const Module = ({
   activeVariant,
   onVariantChange,
 }) => {
+  console.log(data)
   const ModuleType = {
     grid: Grid,
     hero: Hero,

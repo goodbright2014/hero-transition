@@ -1,4 +1,5 @@
 .collection {
+
   @apply border-b;
   
   &--tools {

@@ -67,6 +67,11 @@ a[href="#content"].skip-link {
     svg {
       @apply block fill-current w-auto h-48;
     }
+
+    img {
+      @apply  fill-current w-auto h-48;
+    }
+
   }
 }
 

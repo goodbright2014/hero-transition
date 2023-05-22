@@ -19,10 +19,12 @@ const Home = ({ data }) => {
   }
 
   return (
-    <Layout site={site} page={page}>
-      {page.modules?.map((module, key) => (
-        <Module key={key} index={key} data={module} />
-      ))}
+     <Layout site={site} page={page}>
+      {
+          page.modules?.map((module, key) => (
+            <Module key={key} index={key} data={module} />
+          ))
+      }
     </Layout>
   )
 }

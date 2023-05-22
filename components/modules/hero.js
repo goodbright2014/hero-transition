@@ -9,13 +9,14 @@ const Hero = ({ data = {} }) => {
 
   return (
     <section className="hero">
-      {content && (
+      { content && (
         <div className="hero--overlay">
           <div className="hero--content">
-            <BlockContent blocks={content} />
+
+            <marquee><h2>"당신의 음악이 전송중입니다!"</h2></marquee>
           </div>
         </div>
-      )}
+      )  }
 
       {bgType === 'video' && (
         <>

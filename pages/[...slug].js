@@ -14,7 +14,7 @@ const Page = ({ data }) => {
   if (!router.isFallback && !data) {
     return <NotFoundPage statusCode={404} />
   }
-
+  //console.log(data)
   const { site, page } = data
 
   return (

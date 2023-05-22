@@ -6,6 +6,9 @@ import Layout from '@components/layout'
 import { Module } from '@components/modules'
 
 const CollectionPage = ({ data }) => {
+
+  //console.log(data)
+  
   const { site, page } = data
 
   return (

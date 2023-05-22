@@ -12,6 +12,7 @@ const Menu = ({ items, useMegaNav, hasFocus = true, onClick, ...rest }) => {
 
   if (!items) return null
 
+  //console.log(items)
   return (
     <ul {...rest}>
       {items.map((item, key) => {

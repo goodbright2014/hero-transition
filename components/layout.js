@@ -14,7 +14,7 @@ const pageTransitionAnim = {
   show: {
     opacity: 1,
     transition: {
-      duration: pageTransitionSpeed / 1000,
+      duration: 4000 / 1000,
       delay: 0.2,
       ease: 'linear',
       when: 'beforeChildren',
@@ -23,7 +23,7 @@ const pageTransitionAnim = {
   hide: {
     opacity: 0,
     transition: {
-      duration: pageTransitionSpeed / 1000,
+      duration: 500 / 1000,
       ease: 'linear',
       when: 'beforeChildren',
     },
@@ -50,19 +50,6 @@ const Layout = ({ site = {}, page = {}, schema, children }) => {
     <>
       <HeadSEO site={site} page={page} schema={schema} />
 
-      {site.gtmID && (
-        <Script
-          id="gtm"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','${site.gtmID}');`,
-          }}
-        />
-      )}
-
       <m.div
         key={page.id}
         initial="hide"
@@ -72,6 +59,7 @@ const Layout = ({ site = {}, page = {}, schema, children }) => {
         style={headerHeight ? { '--headerHeight': `${headerHeight}px` } : null}
       >
         <CookieBar data={site.cookieConsent} />
+
         <Header
           data={site.header}
           isTransparent={page.hasTransparentHeader}

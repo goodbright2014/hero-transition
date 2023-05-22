@@ -23,6 +23,7 @@ import Icon from '@components/icon'
 
 const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
   // expand our header data
+
   const {
     promo,
     menuDesktopLeft,
@@ -68,7 +69,7 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
         Skip to Content
       </a>
 
-      <PromoBar data={promo} />
+      <PromoBar data={promo}/>
 
       <header
         className={cx('header', {
@@ -82,17 +83,20 @@ const Header = ({ data = {}, isTransparent, onSetup = () => {} }) => {
             <div className="header--content">
               <div className="logo">
                 {router.pathname === '/' ? (
+               
                   <button
                     className="logo--link"
                     aria-label="Go Home"
                     onClick={() => window.scrollTo(0, 0)}
                   >
-                    <Icon name="Logo" id="header" viewBox="0 0 215 150" />
+                    <Icon name="MyLogo" id="header" viewBox="0 0 215 150" />
                   </button>
+              
+                  
                 ) : (
                   <Link href="/" scroll={false}>
                     <a className="logo--link" aria-label="Go Home">
-                      <Icon name="Logo" id="header" viewBox="0 0 215 150" />
+                      <Icon name="MyLogo" id="header" viewBox="0 0 215 150" />
                     </a>
                   </Link>
                 )}

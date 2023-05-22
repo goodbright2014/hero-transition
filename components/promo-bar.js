@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { ConditionalWrapper } from '@lib/helpers'
 
 import CustomLink from '@components/link'
+import Marquee from './modules/marquee'
 
 const PromoBar = React.memo(({ data = {} }) => {
   const { enabled, display, text, link } = data
@@ -29,7 +30,7 @@ const PromoBar = React.memo(({ data = {} }) => {
             </CustomLink>
           )}
         >
-          {text}
+          <marquee>"70만원 이상 구매고객에게는 배송비가 무료입니다!"</marquee>
         </ConditionalWrapper>
       </div>
     </div>

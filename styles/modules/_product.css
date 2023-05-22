@@ -1,5 +1,5 @@
 .product {
-  @apply border-b;
+  
 
   &--content {
     @apply relative grid md:grid-cols-2 md:gap-1 md:bg-pageText;

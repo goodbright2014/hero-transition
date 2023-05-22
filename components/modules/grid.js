@@ -6,7 +6,13 @@ import Freeform from '@components/freeform'
 import AccordionList from '@components/accordion-list'
 
 const Grid = ({ data = {} }) => {
+  console.log(data)
+
   const { size, columns } = data
+console.log('size')
+console.log(size)
+console.log('columns')
+console.log(columns)
 
   const getGridSize = (
     breakpoint,
